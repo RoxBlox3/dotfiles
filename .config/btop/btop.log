@@ -1,0 +1,25 @@
+
+2024/09/30 (12:51:29) | ===> btop++ v.1.4.0
+2024/09/30 (12:51:29) | INFO: Logger set to INFO
+
+2024/12/17 (15:05:59) | ===> btop++ v.1.4.0
+2024/12/17 (15:05:59) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2024/12/17 (15:08:35) | ===> btop++ v.1.4.0
+2024/12/17 (15:08:35) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2025/02/11 (11:51:20) | ===> btop++ v.1.4.0
+2025/02/11 (11:51:20) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2025/02/11 (11:54:15) | ===> btop++ v.1.4.0
+2025/02/11 (11:54:15) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/02/11 (11:54:28) | WARNING: NVML: Failed to get GPU utilization: Unknown Error
+2025/02/11 (11:54:51) | WARNING: NVML: Failed to get GPU utilization: Unknown Error
+2025/02/11 (11:55:03) | WARNING: NVML: Failed to get GPU utilization: Unknown Error
+
+2025/02/11 (11:59:07) | ===> btop++ v.1.4.0
+2025/02/11 (11:59:07) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/02/11 (11:59:17) | WARNING: NVML: Failed to get GPU utilization: Unknown Error
+
+2025/02/11 (12:52:11) | ===> btop++ v.1.4.0
+2025/02/11 (12:52:11) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
