@@ -11,6 +11,8 @@ return {
 			quickfile = { enabled = true },
 			statuscolumn = { enabled = true },
 			words = { enabled = true },
+			notifier = { enabled = true },
+			input = { enabled = true },
 			dashboard = {
 				preset = {
 					pick = function(cmd, opts)
