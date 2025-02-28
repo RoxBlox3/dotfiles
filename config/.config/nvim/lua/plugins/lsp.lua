@@ -4,6 +4,7 @@ return {
 		dependencies = { "saghen/blink.cmp" },
 		event = "VeryLazy",
 		opts = {
+			--[[
 			servers = {
 				sqlfluff = {
 					settings = {
@@ -26,6 +27,7 @@ return {
 					},
 				},
 			},
+			]]
 			diagnostics = {
 				virtual_text = {
 					spacing = 4,
