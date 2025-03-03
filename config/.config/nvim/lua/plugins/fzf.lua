@@ -1,4 +1,4 @@
-return {
+return {--[[
 	{
 		"ibhagwan/fzf-lua",
 		event = "VeryLazy",
@@ -23,5 +23,5 @@ return {
 				},
 			})
 		end,
-	},
+	},]]
 }

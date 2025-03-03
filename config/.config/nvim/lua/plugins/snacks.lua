@@ -13,6 +13,7 @@ return {
 			statuscolumn = { enabled = true },
 			notifier = { enabled = true },
 			image = { enabled = true },
+			--[[picker = { enabled = true },]]
 			input = { enabled = true },
 			words = { enabled = true },
 
@@ -53,5 +54,9 @@ return {
 				},
 			},
 		},
+		config = function(_, opts)
+			require("snacks").setup(opts) -- Pass opts correctly
+			vim.ui.select = require("snacks.picker").select -- Set picker after setup
+		end,
 	},
 }
