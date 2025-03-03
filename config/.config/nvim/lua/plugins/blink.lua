@@ -36,18 +36,44 @@ return {
 								highlight = "CmpItemKind",
 								ellipsis = true,
 							},
-
 							kind_icon = {
-								ellipsis = false,
 								text = function(ctx)
-									local kind_icon, _, _ = require("mini.icons").get("lsp", ctx.kind)
-									return kind_icon
+									local icon = ctx.kind_icon
+
+									-- If LSP source, check for color derived from documentation
+									if ctx.item.source_name == "LSP" then
+										local color_item = require("nvim-highlight-colors").format(
+											ctx.item.documentation,
+											{ kind = ctx.kind }
+										)
+										if color_item and color_item.abbr then
+											icon = color_item.abbr
+										end
+									end
+
+									-- Get icon from mini.icons
+									local mini_icon, _, _ = require("mini.icons").get("lsp", ctx.kind)
+									return (mini_icon or icon) .. ctx.icon_gap
 								end,
-								-- Optionally, you may also use the highlights from mini.icons
 								highlight = function(ctx)
-									local _, hl, _ = require("mini.icons").get("lsp", ctx.kind)
-									return hl
+									local highlight = "BlinkCmpKind" .. ctx.kind
+
+									-- If LSP source, check for color derived from documentation
+									if ctx.item.source_name == "LSP" then
+										local color_item = require("nvim-highlight-colors").format(
+											ctx.item.documentation,
+											{ kind = ctx.kind }
+										)
+										if color_item and color_item.abbr_hl_group then
+											highlight = color_item.abbr_hl_group
+										end
+									end
+
+									-- Use highlight from mini.icons if available
+									local _, mini_hl, _ = require("mini.icons").get("lsp", ctx.kind)
+									return mini_hl or highlight
 								end,
+								ellipsis = false,
 							},
 						},
 						--[[
