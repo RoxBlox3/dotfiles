@@ -11,9 +11,11 @@ return {
 			quickfile = { enabled = true },
 			scroll = { enabled = true },
 			statuscolumn = { enabled = true },
-			words = { enabled = true },
 			notifier = { enabled = true },
+			image = { enabled = true },
 			input = { enabled = true },
+			words = { enabled = true },
+
 			dashboard = {
 				preset = {
 					pick = function(cmd, opts)
