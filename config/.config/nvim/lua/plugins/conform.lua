@@ -1,5 +1,5 @@
 return {
-	"steavearc/conform.nvim",
+	"stevearc/conform.nvim",
 	opts = {
 		formatters = {
 			prettier = {
