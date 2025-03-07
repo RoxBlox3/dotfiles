@@ -7,7 +7,10 @@ return {
 		opts = {
 			integrations = {
 				cmp = false,
-				blink_cmp = false,
+				blink_cmp = true,
+				snacks = {
+					true,
+				},
 			},
 		},
 	},
