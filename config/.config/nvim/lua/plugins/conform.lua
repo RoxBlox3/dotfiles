@@ -1,5 +1,6 @@
 return {
 	"stevearc/conform.nvim",
+	event = "VeryLazy",
 	opts = {
 		formatters = {
 			prettier = {
@@ -8,6 +9,7 @@ return {
 					"4",
 				},
 			},
+			sqlfluff = {},
 		},
 		formatters_by_ft = {
 			javascript = { "prettier" },
@@ -21,6 +23,7 @@ return {
 			scss = { "prettier" },
 			markdown = { "prettier" },
 			lua = { "stylua" }, -- Example for Lua
+			sqlfluff = { "sqlfluff" },
 		},
 	},
 }

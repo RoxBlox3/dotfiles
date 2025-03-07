@@ -4,39 +4,28 @@ return {
 		dependencies = { "saghen/blink.cmp" },
 		event = "VeryLazy",
 		opts = {
-			--[[
 			servers = {
 				sqlfluff = {
 					settings = {
 						sqlfluff = {
-							dialect = "mysql",
-							indent_unit = "space",
-							format = {
-								comma_style = "trailing", -- Customize as needed
-								aliasing = "explicit",
-								indent_columns = true,
-								quote_style = "double",
-								strip_whitespace = true,
-								reserved_keyword_case = "upper",
-								function_name_case = "lower",
-							},
-							roules = {
-								indentation = "ignore",
+							dialect = "mysql", -- SQL dialect
+							indent_unit = "space", -- Use spaces for indentation
+							rules = {
+								L019 = { comma_style = "trailing" }, -- Trailing comma rule
 							},
 						},
 					},
 				},
 			},
-			]]
-			diagnostics = {
-				virtual_text = {
-					spacing = 4,
-				},
-			},
 		},
 		config = function(_, opts)
 			local lspconfig = require("lspconfig")
-			for server, config in pairs(opts.servers) do
+
+			-- Ensure lspconfig is properly initialized
+			if lspconfig.sqlfluff then
+				lspconfig.sqlfluff.setup(opts.servers.sqlfluff)
+			else
+				vim.notify("sqlfluff LSP is not available", vim.log.levels.ERROR)
 			end
 		end,
 	},
