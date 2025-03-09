@@ -1,15 +1,48 @@
-// Load with --load-config examples/2.jsonc
+// Load with --load-config examples/3.jsonc
 // Note that you must replace the image path to an existing image to display it.
 {
 	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 	"logo": {
-		"source": "~/.config/fastfetch/logo.txt",
-		"padding": {
-			"top": 2
+		"Garuda": {
+			"source": "image",
+			"value": "~/.config/fastfetch/logo/nyarch.png",
+			"padding": {
+				"top": 3
+			},
+			"size": {
+				"width": 100,
+				"height": 100
+			}
 		},
-		"type": "file",
-		"color": {
-			"1": "yellow",
+		"Arch": {
+			"source": "file",
+			"value": "~/.config/fastfetch/logo/aparture_science.txt",
+			"padding": {
+				"top": 3
+			},
+			"color": {
+				"2": "cyan"
+			}
+		},
+		"Windows": {
+			"source": "file",
+			"value": "~/.config/fastfetch/logo/aparture_science.txt",
+			"padding": {
+				"top": 3
+			},
+			"color": {
+				"2": "blue"
+			}
+		},
+		"default": {
+			"source": "file",
+			"value": "~/.config/fastfetch/logo/aparture_science.txt",
+			"padding": {
+				"top": 3
+			},
+			"color": {
+				"2": "yellow"
+			}
 		}
 	},
 	"display": {
@@ -21,26 +54,26 @@
 	"modules": [
 		{
 			"type": "custom",
-			"format": "┌{$1}{$1}┐",
-			"outputColor": "90"
+			"format": "┌{$2}{$1}┐",
+			"outputColor": "91"
 		},
 		{
 			"type": "title",
-			"keyWidth": 10
+			"keyWidth": 11
 		},
 		{
 			"type": "custom",
-			"format": "└{$1}{$1}┘",
-			"outputColor": "90"
+			"format": "└{$2}{$1}┘",
+			"outputColor": "91"
 		},
 		{
 			"type": "custom",
-			"format": " {#90}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}       {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90} "
+			"format": " {#91}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}       {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90} "
 		},
 		{
 			"type": "custom",
-			"format": "┌{$1}{$1}┐",
-			"outputColor": "90"
+			"format": "┌{$2}{$1}┐",
+			"outputColor": "91"
 		},
 		{
 			"type": "os",
@@ -149,13 +182,12 @@
 		},
 		{
 			"type": "custom",
-			"format": "└{$1}{$1}┘",
-			"outputColor": "90"
+			"format": "└{$2}{$1}┘",
+			"outputColor": "91"
 		},
-		"break",
 		{
 			"type": "custom",
-			"format": " {#90}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}       {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90} "
+			"format": " {#91}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}       {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90} "
 		}
 	]
 }

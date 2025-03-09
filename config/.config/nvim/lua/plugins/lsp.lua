@@ -18,7 +18,9 @@ return {
 				},
 			},
 		},
+		--[[
 		config = function(_, opts)
+<<<<<<< Updated upstream
 			local lspconfig = require("lspconfig")
 
 			-- Ensure lspconfig is properly initialized
@@ -26,7 +28,12 @@ return {
 				lspconfig.sqlfluff.setup(opts.servers.sqlfluff)
 			else
 				vim.notify("sqlfluff LSP is not available", vim.log.levels.ERROR)
+=======
+			local lspconfig = require("lspconfig"),
+			for server, config in pairs(opts.servers) do
+>>>>>>> Stashed changes
 			end
 		end,
+		]]
 	},
 }
