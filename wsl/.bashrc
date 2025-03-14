@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grp='grep --color=auto'
+alias vite='npm run dev -- --host'
 PS1='[\u@\h \W]\$ '
 
 export STARSHIP_CONFIG=~/.config/starship.toml
