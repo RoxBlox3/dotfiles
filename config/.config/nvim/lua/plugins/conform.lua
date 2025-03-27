@@ -9,7 +9,6 @@ return {
 					"4",
 				},
 			},
-			sqlfluff = {},
 		},
 		formatters_by_ft = {
 			javascript = { "prettier" },
