@@ -20,7 +20,7 @@
 		{
 			"type": "custom",
 			"format": "┌{$1}{$1}┐",
-			"outputColor": "#91"
+			"outputColor": "red"
 		},
 		{
 			"type": "title",
@@ -29,7 +29,7 @@
 		{
 			"type": "custom",
 			"format": "└{$1}{$1}┘",
-			"outputColor": "#91"
+			"outputColor": "red"
 		},
 		{
 			"type": "custom",
@@ -38,7 +38,7 @@
 		{
 			"type": "custom",
 			"format": "┌{$1}{$1}┐",
-			"outputColor": "#91"
+			"outputColor": "red"
 		},
 		{
 			"type": "os",
@@ -148,7 +148,7 @@
 		{
 			"type": "custom",
 			"format": "└{$1}{$1}┘",
-			"outputColor": "#91"
+			"outputColor": "red"
 		},
 		{
 			"type": "custom",
