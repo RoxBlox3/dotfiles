@@ -19,3 +19,6 @@ eval "$(fzf --bash)"
 
 export PATH="$PATH:/home/yohan/.local/bin"
 export DISPLAY=:0
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
