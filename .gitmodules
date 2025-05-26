@@ -1,0 +1,3 @@
+[submodule "wsl/anifetch"]
+	path = wsl/anifetch
+	url = https://github.com/Notenlish/anifetch
