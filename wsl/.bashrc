@@ -10,6 +10,7 @@ alias grp='grep --color=auto'
 alias vite='npm run dev -- --host'
 alias run='npm run serve'
 PS1='[\u@\h \W]\$ '
+alias anifetch='python3 $HOME/anifetch/anifetch.py -f "$HOME/media/NeuroKuru.mp4" -r 10 -W 54 -H 45 -c "--symbols solid --fg-only" -ff'
 
 export STARSHIP_CONFIG=~/.config/starship.toml
 
