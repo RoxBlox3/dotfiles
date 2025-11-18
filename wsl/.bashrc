@@ -18,7 +18,6 @@ eval "$(starship init bash)"
 eval "$(zoxide init --cmd cd bash)"
 eval "$(fzf --bash)"
 
-export PATH="$PATH:/home/yohan/.local/bin"
 export DISPLAY=:0
 
 # Generated for envman. Do not edit.
